@@ -27,12 +27,10 @@ const Header = () => {
                     </div>
                     <div className="right-buttons">
                         <button>
-                            <Link to={"/login"}/>
-                            Log In
+                            <Link to={"/sign-in"}> Sign In</Link>
                         </button>
                         <button>
-                            <Link to={"/sign-up"}/>
-                            Sign Up
+                            <Link to={"/sign-up"}> Sign Up</Link>
                         </button>
                         <AddShoppingCartIcon className="basket"/>
                     </div>

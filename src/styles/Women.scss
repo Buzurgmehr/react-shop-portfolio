@@ -1,0 +1,32 @@
+@import './colors';
+@import './mixins';
+
+.women {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right bottom, rgba(24, 21, 20, 0.587),rgba(0, 0, 0, 0.383)), url("../assets/img/img-women-background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+
+    .women-header {
+        @include flex-center;
+        flex-direction: column;
+        font-size:2rem;
+        color: $main-color;
+    }
+
+    .look {
+        margin: 15rem;
+        text-align: center;
+        color: $main-color;
+        font-size:3rem;
+
+        button {
+            @include button;
+        }
+        button:hover {
+            @include buttonHover;
+        }
+    }
+}
