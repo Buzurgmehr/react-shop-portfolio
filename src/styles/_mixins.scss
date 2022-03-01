@@ -1,0 +1,33 @@
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+}
+@mixin button {
+    background: none;
+    padding: 10px 2rem;
+    color: $main-color;
+    cursor: pointer;
+    font-weight: bolder;
+    border: 1px solid $main-color;
+    font-size: 16px;
+    margin-top: 2rem;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+@mixin buttonHover {
+    transition: 1s ease-in-out;
+    color: $secondary-color;
+    background: $main-color;
+    transform: scale(120%);
+    -webkit-transform: scale(120%);
+    -moz-transform: scale(120%);
+    -ms-transform: scale(120%);
+    -o-transform: scale(120%);
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -ms-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+}
